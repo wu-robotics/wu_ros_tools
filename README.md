@@ -1,3 +1,30 @@
+## wu_ros_tools (hydro) - 0.2.0-0
+
+The packages in the `wu_ros_tools` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --rosdistro hydro --track hydro -e wu_ros_tools` on `Tue, 22 Jul 2014 21:53:15 -0000`
+
+These packages were released:
+- `catkinize_this`
+- `easy_markers`
+- `joy_listener`
+- `kalman_filter`
+- `manifest_cleaner`
+- `rosbaglive`
+- `roswiki_node`
+- `wu_ros_tools`
+
+Version of package(s) in repository `wu_ros_tools`:
+- rosdistro version: `0.1.0-3`
+- old version: `0.1.0-3`
+- new version: `0.2.0-0`
+
+Versions of tools used:
+- bloom version: `0.5.10`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.28`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.31`
+
+
 ## wu_ros_tools (hydro) - 0.1.0-3
 
 The packages in the `wu_ros_tools` repository were released into the `hydro` distro by running `/usr/bin/bloom-release wu_ros_tools --track hydro --rosdistro hydro` on `Tue, 22 Jul 2014 14:26:00 -0000`
