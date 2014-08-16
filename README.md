@@ -1,3 +1,30 @@
+## wu_ros_tools (groovy) - 0.1.1-1
+
+The packages in the `wu_ros_tools` repository were released into the `groovy` distro by running `/usr/bin/bloom-release wu_ros_tools --track groovy --rosdistro groovy -e` on `Sat, 16 Aug 2014 21:16:05 -0000`
+
+These packages were released:
+- `catkinize_this`
+- `easy_markers`
+- `manifest_cleaner`
+- `rosbaglive`
+- `roswiki_node`
+- `wu_ros_tools`
+
+Version of package(s) in repository `wu_ros_tools`:
+- upstream repository: https://github.com/DLu/wu_ros_tools
+- release repository: https://github.com/wu-robotics/wu_ros_tools.git
+- rosdistro version: `0.1.0-5`
+- old version: `0.1.1-0`
+- new version: `0.1.1-1`
+
+Versions of tools used:
+- bloom version: `0.5.11`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.28`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## wu_ros_tools (groovy) - 0.1.1-0
 
 The packages in the `wu_ros_tools` repository were released into the `groovy` distro by running `/usr/bin/bloom-release wu_ros_tools --track groovy --rosdistro groovy -e` on `Sat, 16 Aug 2014 21:13:12 -0000`
