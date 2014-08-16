@@ -1,0 +1,12 @@
+Source: ros-groovy-rosbaglive
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-groovy-catkin
+Homepage: http://ros.org/wiki/rosbaglive
+Standards-Version: 3.9.2
+
+Package: ros-groovy-rosbaglive
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-rosbag, ros-groovy-rospy
+Description: Tool for playing rosbags as though they were happening NOW.
