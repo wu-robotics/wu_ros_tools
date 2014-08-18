@@ -1,0 +1,12 @@
+Source: ros-groovy-joy-listener
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-groovy-catkin, ros-groovy-rospy, ros-groovy-sensor-msgs
+Homepage: http://ros.org/wiki/joy_listener
+Standards-Version: 3.9.2
+
+Package: ros-groovy-joy-listener
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-rospy, ros-groovy-sensor-msgs
+Description: Translates joy msgs
