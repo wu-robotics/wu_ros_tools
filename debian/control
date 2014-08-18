@@ -1,0 +1,12 @@
+Source: ros-groovy-catkinize-this
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 7.0.0), ros-groovy-catkin, ros-groovy-rospy
+Homepage: http://ros.org/wiki/catkinize_this
+Standards-Version: 3.9.2
+
+Package: ros-groovy-catkinize-this
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-rospack, ros-groovy-rospy
+Description: Scripts for helping catkinize packages
