@@ -1,0 +1,12 @@
+Source: ros-groovy-easy-markers
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-groovy-catkin, ros-groovy-geometry-msgs, ros-groovy-interactive-markers, ros-groovy-roslib, ros-groovy-rospy, ros-groovy-tf, ros-groovy-visualization-msgs
+Homepage: http://ros.org/wiki/easy_markers
+Standards-Version: 3.9.2
+
+Package: ros-groovy-easy-markers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-geometry-msgs, ros-groovy-interactive-markers, ros-groovy-roslib, ros-groovy-rospy, ros-groovy-tf, ros-groovy-visualization-msgs
+Description: Python library to assist in publishing markers easily
