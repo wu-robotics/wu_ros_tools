@@ -1,0 +1,12 @@
+Source: ros-indigo-wu-ros-tools
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/wu_ros_tools
+Standards-Version: 3.9.2
+
+Package: ros-indigo-wu-ros-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-catkinize-this, ros-indigo-easy-markers, ros-indigo-joy-listener, ros-indigo-kalman-filter, ros-indigo-manifest-cleaner, ros-indigo-rosbaglive, ros-indigo-roswiki-node
+Description: A collection of tools for making a variety of generic ROS-related tasks easier.
