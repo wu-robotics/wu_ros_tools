@@ -1,0 +1,12 @@
+Source: ros-indigo-easy-markers
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-interactive-markers, ros-indigo-roslib, ros-indigo-rospy, ros-indigo-tf, ros-indigo-visualization-msgs
+Homepage: http://ros.org/wiki/easy_markers
+Standards-Version: 3.9.2
+
+Package: ros-indigo-easy-markers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-interactive-markers, ros-indigo-roslib, ros-indigo-rospy, ros-indigo-tf, ros-indigo-visualization-msgs
+Description: Python library to assist in publishing markers easily
