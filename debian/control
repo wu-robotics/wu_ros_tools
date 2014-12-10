@@ -1,0 +1,12 @@
+Source: ros-indigo-joy-listener
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-rospy, ros-indigo-sensor-msgs
+Homepage: http://ros.org/wiki/joy_listener
+Standards-Version: 3.9.2
+
+Package: ros-indigo-joy-listener
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-rospy, ros-indigo-sensor-msgs
+Description: Translates joy msgs
