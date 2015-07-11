@@ -1,0 +1,12 @@
+Source: ros-indigo-roswiki-node
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/roswiki_node
+Standards-Version: 3.9.2
+
+Package: ros-indigo-roswiki-node
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-rospy
+Description: Creates CS/NodeAPI clearsilver documentation from source code files. Typical usage: rosrun roswiki_node roswiki src/*
