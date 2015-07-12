@@ -1,0 +1,12 @@
+Source: ros-jade-catkinize-this
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-rospy
+Homepage: http://ros.org/wiki/catkinize_this
+Standards-Version: 3.9.2
+
+Package: ros-jade-catkinize-this
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-rospack, ros-jade-rospy
+Description: Scripts for helping catkinize packages
