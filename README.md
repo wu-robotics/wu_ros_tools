@@ -1,3 +1,32 @@
+## wu_ros_tools (jade) - 0.2.4-0
+
+The packages in the `wu_ros_tools` repository were released into the `jade` distro by running `/usr/bin/bloom-release wu_ros_tools --track jade --rosdistro jade --new-track` on `Sun, 12 Jul 2015 00:48:16 -0000`
+
+These packages were released:
+- `catkinize_this`
+- `easy_markers`
+- `joy_listener`
+- `kalman_filter`
+- `manifest_cleaner`
+- `rosbaglive`
+- `roswiki_node`
+- `wu_ros_tools`
+
+Version of package(s) in repository `wu_ros_tools`:
+- upstream repository: https://github.com/DLu/wu_ros_tools
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.8`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## wu_ros_tools (indigo) - 0.2.4-0
 
 The packages in the `wu_ros_tools` repository were released into the `indigo` distro by running `/usr/bin/bloom-release wu_ros_tools --track indigo --rosdistro indigo` on `Sat, 11 Jul 2015 21:16:33 -0000`
