@@ -1,0 +1,12 @@
+Source: ros-jade-wu-ros-tools
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://ros.org/wiki/wu_ros_tools
+Standards-Version: 3.9.2
+
+Package: ros-jade-wu-ros-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-catkinize-this, ros-jade-easy-markers, ros-jade-joy-listener, ros-jade-kalman-filter, ros-jade-manifest-cleaner, ros-jade-rosbaglive, ros-jade-roswiki-node
+Description: A collection of tools for making a variety of generic ROS-related tasks easier.
