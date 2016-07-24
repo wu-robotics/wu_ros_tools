@@ -1,3 +1,31 @@
+## wu_ros_tools (kinetic) - 0.2.4-0
+
+The packages in the `wu_ros_tools` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release wu_ros_tools --track kinetic --rosdistro kinetic --new-track` on `Sun, 24 Jul 2016 00:24:04 -0000`
+
+These packages were released:
+- `easy_markers`
+- `joy_listener`
+- `kalman_filter`
+- `rosbaglive`
+- `wu_ros_tools`
+
+Version of package(s) in repository `wu_ros_tools`:
+
+- upstream repository: https://github.com/DLu/wu_ros_tools
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## wu_ros_tools (jade) - 0.2.4-0
 
 The packages in the `wu_ros_tools` repository were released into the `jade` distro by running `/usr/bin/bloom-release wu_ros_tools --track jade --rosdistro jade --new-track` on `Sun, 12 Jul 2015 00:48:16 -0000`
