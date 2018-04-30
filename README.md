@@ -1,3 +1,31 @@
+## wu_ros_tools (melodic) - 0.2.4-0
+
+The packages in the `wu_ros_tools` repository were released into the `melodic` distro by running `/usr/bin/bloom-release wu_ros_tools --ros-distro melodic --new-track -y` on `Mon, 30 Apr 2018 20:32:10 -0000`
+
+These packages were released:
+- `easy_markers`
+- `joy_listener`
+- `kalman_filter`
+- `rosbaglive`
+- `wu_ros_tools`
+
+Version of package(s) in repository `wu_ros_tools`:
+
+- upstream repository: https://github.com/DLu/wu_ros_tools
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.3.9`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.40`
+
+
 ## wu_ros_tools (lunar) - 0.2.4-0
 
 The packages in the `wu_ros_tools` repository were released into the `lunar` distro by running `/usr/bin/bloom-release wu_ros_tools --ros-distro lunar --new-track` on `Mon, 30 Apr 2018 20:20:39 -0000`
