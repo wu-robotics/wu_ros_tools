@@ -1,0 +1,12 @@
+Source: ros-lunar-rosbaglive
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-rosbag, ros-lunar-rospy
+Homepage: http://ros.org/wiki/rosbaglive
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rosbaglive
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-rosbag, ros-lunar-rospy
+Description: Plays rosbags as though they were happening NOW.
