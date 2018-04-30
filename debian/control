@@ -1,0 +1,12 @@
+Source: ros-lunar-wu-ros-tools
+Section: misc
+Priority: extra
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://ros.org/wiki/wu_ros_tools
+Standards-Version: 3.9.2
+
+Package: ros-lunar-wu-ros-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-easy-markers, ros-lunar-joy-listener, ros-lunar-kalman-filter, ros-lunar-rosbaglive
+Description: A collection of tools for making a variety of generic ROS-related tasks easier.
