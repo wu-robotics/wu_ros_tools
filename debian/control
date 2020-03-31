@@ -1,0 +1,12 @@
+Source: ros-kinetic-easy-markers
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-interactive-markers, ros-kinetic-rospy, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Homepage: http://ros.org/wiki/easy_markers
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-easy-markers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-geometry-msgs, ros-kinetic-interactive-markers, ros-kinetic-rospy, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Description: Python library to assist in publishing markers easily
