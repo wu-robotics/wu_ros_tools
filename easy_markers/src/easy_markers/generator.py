@@ -1,8 +1,9 @@
-import roslib; roslib.load_manifest('easy_markers')
 import tf
 import rospy
-from visualization_msgs.msg import Marker, MarkerArray
+from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point, Quaternion
+from std_msgs.msg import ColorRGBA
+
 
 def get_point(position, scale=1.0):
     pt = Point()
@@ -24,7 +25,8 @@ def get_point(position, scale=1.0):
     pt.z /= scale
 
     return pt
-    
+
+
 def get_quat(orientation):
     quat = Quaternion()
     if orientation is None:
@@ -37,19 +39,42 @@ def get_quat(orientation):
         quat.x = orientation.x
         quat.y = orientation.y
         quat.z = orientation.z
-    elif len(orientation)==4:
+    elif len(orientation) == 4:
         quat.x = orientation[0]
         quat.y = orientation[1]
         quat.z = orientation[2]
         quat.w = orientation[3]
     else:
-        q2 = tf.transformations.quaternion_from_euler(orientation[0],orientation[1],orientation[2])
+        q2 = tf.transformations.quaternion_from_euler(orientation[0], orientation[1], orientation[2])
         quat.x = q2[0]
         quat.y = q2[1]
         quat.z = q2[2]
         quat.w = q2[3]
     return quat
-        
+
+
+def get_color(color):
+    rgba = ColorRGBA()
+    if color is None:
+        color = [1.0] * 4
+
+    if hasattr(color, 'x'):
+        rgba.r = getattr(color, 'r', 1.0)
+        rgba.g = getattr(color, 'g', 1.0)
+        rgba.b = getattr(color, 'b', 1.0)
+        rgba.a = getattr(color, 'a', 1.0)
+    elif len(color) == 4:
+        rgba.r = color[0]
+        rgba.g = color[1]
+        rgba.b = color[2]
+        rgba.a = color[3]
+    else:
+        rgba.r = color[0]
+        rgba.g = color[1]
+        rgba.b = color[2]
+        rgba.a = 1.0
+    return rgba
+
 
 class MarkerGenerator:
     def __init__(self):
@@ -61,14 +86,14 @@ class MarkerGenerator:
         self.ns = 'marker'
         self.type = 0
         self.action = Marker.ADD
-        self.scale = [1.0] *3
-        self.color = [1.0] * 4
+        self.scale = [1.0] * 3
+        self.color = None
         self.points = []
         self.colors = []
-        self.text = ''       
+        self.text = ''
         self.lifetime = 0.0
 
-    def marker(self, position=None, orientation=None, points=None, colors=None, scale=1.0):
+    def marker(self, position=None, orientation=None, points=None, colors=None, scale=1.0, color=None):
         mark = Marker()
         mark.header.stamp = rospy.Time.now()
         mark.header.frame_id = self.frame_id
@@ -79,10 +104,10 @@ class MarkerGenerator:
         mark.scale.x = self.scale[0]
         mark.scale.y = self.scale[1]
         mark.scale.z = self.scale[2]
-        mark.color.r = self.color[0]
-        mark.color.g = self.color[1]
-        mark.color.b = self.color[2]
-        mark.color.a = self.color[3]
+        if color:
+            mark.color = get_color(color)
+        else:
+            mark.color = get_color(self.color)
         mark.lifetime = rospy.Duration(self.lifetime)
 
         if points is not None:
@@ -95,8 +120,8 @@ class MarkerGenerator:
         if position is not None or orientation is not None:
             mark.pose.position = get_point(position, scale)
             mark.pose.orientation = get_quat(orientation)
+        else:
+            mark.pose.orientation.w = 1.0
 
-           
-
-        self.counter+=1
+        self.counter += 1
         return mark
