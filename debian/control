@@ -1,0 +1,12 @@
+Source: ros-melodic-joy-listener
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-roslint, ros-melodic-rospy, ros-melodic-sensor-msgs
+Homepage: http://ros.org/wiki/joy_listener
+Standards-Version: 3.9.2
+
+Package: ros-melodic-joy-listener
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-rospy, ros-melodic-sensor-msgs
+Description: Translates joy msgs
