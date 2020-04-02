@@ -1,0 +1,12 @@
+Source: ros-melodic-wu-ros-tools
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/wu_ros_tools
+Standards-Version: 3.9.2
+
+Package: ros-melodic-wu-ros-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-easy-markers, ros-melodic-joy-listener, ros-melodic-kalman-filter, ros-melodic-rosbaglive
+Description: A collection of tools for making a variety of generic ROS-related tasks easier.
