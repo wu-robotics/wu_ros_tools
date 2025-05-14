@@ -1,0 +1,12 @@
+Source: ros-noetic-easy-markers
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-geometry-msgs, ros-noetic-interactive-markers, ros-noetic-roslint <!nocheck>, ros-noetic-rospy, ros-noetic-std-msgs, ros-noetic-tf, ros-noetic-visualization-msgs
+Homepage: http://ros.org/wiki/easy_markers
+Standards-Version: 3.9.2
+
+Package: ros-noetic-easy-markers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-geometry-msgs, ros-noetic-interactive-markers, ros-noetic-rospy, ros-noetic-rviz, ros-noetic-std-msgs, ros-noetic-tf, ros-noetic-visualization-msgs
+Description: Python library to assist in publishing markers easily
