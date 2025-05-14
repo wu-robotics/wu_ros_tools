@@ -1,3 +1,31 @@
+## wu_ros_tools (noetic) - 0.3.1-1
+
+The packages in the `wu_ros_tools` repository were released into the `noetic` distro by running `/usr/bin/bloom-release wu_ros_tools -r noetic` on `Wed, 14 May 2025 01:31:54 -0000`
+
+These packages were released:
+- `easy_markers`
+- `joy_listener`
+- `kalman_filter`
+- `rosbaglive`
+- `wu_ros_tools`
+
+Version of package(s) in repository `wu_ros_tools`:
+
+- upstream repository: https://github.com/DLu/wu_ros_tools
+- release repository: https://github.com/wu-robotics/wu_ros_tools.git
+- rosdistro version: `0.3.0-1`
+- old version: `0.3.0-1`
+- new version: `0.3.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## wu_ros_tools (noetic) - 0.3.0-1
 
 The packages in the `wu_ros_tools` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic wu_ros_tools` on `Fri, 18 Sep 2020 17:44:57 -0000`
